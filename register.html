@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Multi Step Form | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <header>Eligibility Checker</header>
+         <div class="progress-bar">
+            <div class="step">
+               <p>
+                        
+                  </p>
+               <div class="bullet">
+                  <span>1</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                        
+
+                  </p>
+               <div class="bullet">
+                  <span>2</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                      
+                  </p>
+               <div class="bullet">
+                  <span>3</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                      
+
+                  </p>
+               <div class="bullet">
+                  <span>4</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+         </div>
+         <div class="form-outer">
+            <form action="#">
+               <div class="page slide-page">
+                  <div class="title">
+                     Tell us about yourself:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Your age is:
+                     </div>
+                     <select>
+                        <option>Below 18</option>
+                        <option>Above 18</option>
+                        <option>Other</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        And your gender is:                    
+                     </div>
+                     <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        What is your martial status:
+                     </div>
+                     <select>
+                        <option>Married</option>
+                        <option>Not Married</option>
+                        <option>Other</option>
+                     </select>
+                  </div>
+
+                  <div class="field">
+                     <button class="firstNext next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                        
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Please select your state:
+                     </div>
+                     <select>
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chhatisgrah</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Please select your area of residence
+                     </div>
+                     <select>
+                        <option>Urban</option>
+                        <option>Rural</option>
+                     </select>
+                  </div>
+                  
+                  <div class="field btns">
+                     <button class="prev-1 prev">Previous</button>
+                     <button class="next-1 next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                       
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Are you Differently abled:
+                     </div>
+                     <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                       Do you belong to minority:
+                     </div>
+                     <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        You belong to:
+                     </div>
+                     <select>
+                        <option>Scheduled caste(SC)</option>
+                        <option>Scheduled Tibe(ST)</option>
+                        <option>Other backward class(OBC)</option>
+                        <option>General</option>
+                     </select>
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-2 prev">Previous</button>
+                     <button class="next-2 next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                        
+                  </div>
+                  
+                  <form action="submit.php" method="post">
+                     <div>
+                      <label for="occupation" style="font-size: 20px; text-align: left;">Are you a student:</label>
+                     </div>
+                     <select style="font-size: 18px; width: 315px; height: 40px;" id="occupation" name="occupation" required>
+                        <option value="" style="font-size: 19px;">Select Option</option>
+                       <option value="student" style="font-size: 19px;">Yes</option>
+                       <option value="employee" style="font-size: 19px;">No</option>
+                       <option value="self-employed" style="font-size: 19px;">Other</option>
+                     </select><br><br>
+                     
+                     <!-- Conditional input field for field of study -->
+                     <div id="studyField" style="display:none;">
+                        <div>
+                         <label for="fieldOfStudy" style="font-size: 20px; text-align: left;">Qualification level:</label>
+                       </div>
+                       <select style="font-size: 18px; width: 315px; height: 40px;">
+                        <option style="font-size: 19px;">Post Graduate(PG)</option>
+                        <option style="font-size: 19px;">Under Graduate(UG)</option>
+                        <option style="font-size: 19px;">Diploma</option>
+                        <option style="font-size: 19px;">Others</option>
+                     </select>
+                      
+                     </div>
+                     
+                     <!-- Script to show or hide the field of study based on occupation -->
+                     <script>
+                       document.getElementById('occupation').addEventListener('change', function() {
+                         var studyField = document.getElementById('studyField');
+                         
+                         // Show or hide the field of study based on the selected occupation
+                         if (this.value === 'student') {
+                           studyField.style.display = 'block';
+                         } else {
+                           studyField.style.display = 'none';
+                         }
+                       });
+                     </script>
+                     
+                  
+                  <div class="field btns">
+                     <button class="prev-3 prev">Previous</button>
+                     <button class="submit">Submit</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <script src="script2.js"></script>
+   </body>
+</html>

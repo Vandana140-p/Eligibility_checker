@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Template with Popup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="carousel">
+    <!-- Carousel Content Goes Here -->
+    <div class="carousel-item">
+      <!-- Content for the first carousel item -->
+      <button class="open-popup-btn">Open Popup</button>
+    </div>
+    <div class="carousel-item">
+      <!-- Content for the second carousel item -->
+    </div>
+    <!-- Add more carousel items as needed -->
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="popup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>This is a popup modal.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
